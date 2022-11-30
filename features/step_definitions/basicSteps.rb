@@ -16,4 +16,10 @@ end
 When(/^I click the "([^"]*)" button$/) do |buttonName|
     find_button(buttonName).click
     # find(:xpath, xpath).click
-  end
+end
+
+# And I click the Detalle button of "Ayuda benefica"
+When(/^I click the Detalle button of "([^"]*)"$/) do |buttonName|
+  find("Detalles_Ayuda benefica").click
+  # find(:xpath, xpath).click
+end
