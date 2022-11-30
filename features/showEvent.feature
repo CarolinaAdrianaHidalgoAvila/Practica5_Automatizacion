@@ -22,5 +22,5 @@ Scenario: Watch details of an events
   And I click the "Iniciar Sesión" button
   And I click the "Eventos" button
   And I see a text of "EVENTOS VIGENTES"
-  Then I click the Detalle button of "Ayuda benefica"
+  Then I click the Detalle button of Ayuda benefica
   And I see a text of "1 Bs hace la diferencia"
