@@ -14,6 +14,7 @@ Scenario: Watch all  the events availables
   Then I see a text of "1 Bs hace la diferencia"
   Then I see a text of "Kermess para Maria"
 
+@detailsEvent
 Scenario: Watch details of an events     
   Given I am on the Start Americas Together login page
   When I enter "voluntario@gmail.com" for Email
@@ -21,5 +22,5 @@ Scenario: Watch details of an events
   And I click the "Iniciar Sesión" button
   And I click the "Eventos" button
   And I see a text of "EVENTOS VIGENTES"
-  Then I click the "Detalles" button
+  Then I click the Detalle button of Ayuda benefica
   And I see a text of "1 Bs hace la diferencia"
