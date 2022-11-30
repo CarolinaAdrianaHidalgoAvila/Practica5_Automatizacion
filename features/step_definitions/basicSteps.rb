@@ -12,8 +12,8 @@ Then('I see a text of {string}') do |text|
     page.has_content?(text)
 end
 
-# And I press the "Iniciar Sesión" button
-When(/^I press the "([^"]*)" button$/) do |buttonName|
+# And I click the "Iniciar Sesión" button
+When(/^I click the "([^"]*)" button$/) do |buttonName|
     find_button(buttonName).click
     # find(:xpath, xpath).click
   end
