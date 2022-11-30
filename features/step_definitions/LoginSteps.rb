@@ -13,3 +13,4 @@ end
 When(/^I enter "([^"]*)" for Contraseña$/) do |pass|
   fill_in 'password', :with => pass
 end
+
