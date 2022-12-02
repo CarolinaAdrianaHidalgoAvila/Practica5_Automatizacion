@@ -1,6 +1,7 @@
-Feature: As a coreteam user
-         I want to see the profile in Start Americas Together 
-         so I test that works correctly
+Feature: Account
+    As a coreteam user
+    I want to see the profile in Start Americas Together 
+    so I test that works correctly
 
   Scenario: See Profile
     Given I am on the Start Americas Together login page

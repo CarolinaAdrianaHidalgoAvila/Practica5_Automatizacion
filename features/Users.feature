@@ -1,6 +1,7 @@
-Feature: As a coreteam user
-         I want to see the Users in Start Americas Together 
-         so I test that works correctly
+Feature:Users
+   As a coreteam user
+   I want to see the Users in Start Americas Together 
+   so I test that works correctly
 
   Scenario: See Users
     Given I am on the Start Americas Together login page
