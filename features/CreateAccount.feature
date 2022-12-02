@@ -36,6 +36,9 @@ Feature:  Create a new account
   Scenario: User creates new account with Google        
     Given I am on the StartApp login page
     And I click the "¿No tienes cuenta? Regístrate aquí." link
-    When I click the ""
-    And I press the button register with google
-    Then Go back to login page
+    When I click the "REGíSTRATE CON GOOGLE" button
+    Then I am on the StartApp login page
+    And I fill in Email with "caroh2001@gmail.com"
+    And I fill in Password with "pepito123"
+    And I click the "Iniciar Sesión" button
+    And I should be on the users home page
