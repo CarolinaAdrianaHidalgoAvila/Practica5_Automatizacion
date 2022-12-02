@@ -6,8 +6,8 @@ Feature: As a coreteam user
     Given I am on the Start Americas Together login page
     When I fill in Email with "coreteam@gmail.com"
     And I fill in Password with "123456"
-    And Press the "Iniciar Sesión" button
-    When Press the "Cuenta" button
+    And I click the "Iniciar Sesión" button
+    When I click the "Cuenta" button
     Then I should see "core team"
 
 
