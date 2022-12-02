@@ -5,8 +5,8 @@ Feature: Log in
 
   Scenario Outline: Register on the Start Americas Together login page with several valid emails   
     Given I am on the StartApp login page
-    When I fill in "Email" with <email>
-    And I fill in "Password" with <password>
+    When I fill in Email with <email>
+    And I fill in Password with <password>
     And I click the "Iniciar Sesión" button
     Then I should be on the users home page
     
@@ -16,24 +16,17 @@ Feature: Log in
       |  lider@gmail.com      |  123456 |	  
       |  coreteam@gmail.com   |  123456 |
 
-  Scenario Outline: Validate password entry    
-   Given I am on the StartApp login page
-    When I fill in "Email" with voluntario@gmail.com
-    And I fill in "Password" with <password>
+  Scenario: Register on Start Americas Together page without password
+    Given I am on the StartApp login page
+    When I fill in Email with  voluntario@gmail.com 
+    And I enter blank password data to start session
     And I click the "Iniciar Sesión" button
-    Then show message <message>
-    And I should be on the users home page
-    
-  Examples:
-      | password | message               | 
-      |  123456  |                       |
-      |  145678  |  Contraseña Incorrecta|	  
-      |          |  Campo requerido      |
+    Then the error "Campo requerido" is show.
 
    Scenario: Register on the Start Americas Together login page with invalid details
     Given I am on the StartApp login page
-    When I fill in "Email" with caramelo@gmail.com
-    And I fill in "Password" with 1345678
+    When I fill in Email with caramelo@gmail.com
+    And I fill in Password with 1345678
     And I click the "Iniciar Sesión" button
     Then show message "Correo o contraseña inválidos."
 
