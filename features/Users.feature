@@ -4,9 +4,9 @@ Feature: As a coreteam user
 
   Scenario: See Users
     Given I am on the Start Americas Together login page
-    When I enter "coreteam@gmail.com" for Email
-    And I enter "123456" for Contraseña
+    When I fill in Email with "coreteam@gmail.com"
+    And I fill in Password with "123456"
     And I click the "Iniciar Sesión" button
     When I click the "Usarios" button
     And I click the "Descargar" button
-    Then I should see ""
+    Then I should see "Descarga completada" message
