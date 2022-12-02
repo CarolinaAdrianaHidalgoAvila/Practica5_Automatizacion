@@ -4,6 +4,8 @@ Feature:Log out
   I should press close session
 
   Scenario: The user will log out
-    Given 
-    When
-    Then
+    Given I am on the Start Americas Together login page
+    When I fill in Email with "coreteam@gmail.com"
+    And I fill in Password with "123456"
+    When I click the "LOGOUT" button
+    Then I am on the Start Americas Together login page
