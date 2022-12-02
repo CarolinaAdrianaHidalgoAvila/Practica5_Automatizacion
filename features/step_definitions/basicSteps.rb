@@ -3,13 +3,16 @@
 #Then I see an option for the "Inicio"
 Then('I see an option for the {string}') do |option|
     sleep 4
-    page.has_content?(option)
+    hasButton = find_button(option).visible?
+    expect(hasButton).to be true
+    # page.has_content?(option)
   end
   
 #Then I see a text of "Tus Próximos Eventos"
 Then('I see a text of {string}') do |text|
     sleep 4
-    page.has_content?(text)
+    hasContent = page.has_content?(text)
+    expect(hasContent).to be true
 end
 
 # And I click the "Iniciar Sesión" button
