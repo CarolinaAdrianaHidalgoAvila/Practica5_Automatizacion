@@ -23,7 +23,6 @@ Feature: Show projects section
     And I Enter the category "Medio Ambiente"
     And I see project detail
     Then I see events of a project
-    
    Scenario: User views projects by category
     Given I am on the StartApp login page
     When I enter "voluntario@gmail.com" for Email
