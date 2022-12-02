@@ -13,6 +13,7 @@ Scenario: Watch the Start Americas Together Home Page
   And I see an option for the "Eventos"
   And I see an option for the "Cuenta"
 
+
 Scenario: Watch the Events that I am signed up        
   Given I am on the Start Americas Together login page
   When I enter "voluntario@gmail.com" for Email
