@@ -4,8 +4,8 @@ Feature: As a coreteam user
 
   Scenario: See Profile
     Given I am on the Start Americas Together login page
-    When I enter "coreteam@gmail.com" for Email
-    And I enter "123456" for Contraseña
+    When I fill in Email with "coreteam@gmail.com"
+    And I fill in Password with "123456"
     And Press the "Iniciar Sesión" button
     When Press the "Cuenta" button
     Then I should see "core team"
@@ -13,8 +13,8 @@ Feature: As a coreteam user
 
   Scenario: See Events from Acount    
     Given I am on the Start Americas Together login page
-    When I enter "coreteam@gmail.com" for Email
-    And I enter "123456" for Contraseña
+    When I fill in Email with "coreteam@gmail.com"
+    And I fill in Password with "123456"
     And I click the "Iniciar Sesión" button
     When  I click the "Cuenta" button
     And  I click the "Tus Eventos" button
@@ -22,8 +22,8 @@ Feature: As a coreteam user
   
   Scenario: See Editar perfil
     Given I am on the Start Americas Together login page
-    When I enter "coreteam@gmail.com" for Email
-    And I enter "123456" for Contraseña
+    When I fill in Email with "coreteam@gmail.com"
+    And I fill in Password with "123456"
     And I click the "Iniciar Sesión" button
     When I click the "Cuenta" button
     And Click the "Editar Perfil" button
